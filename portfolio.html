@@ -23,10 +23,19 @@
   <body>
     <header>
       <section class="border-header">
-        <div class="container container--position">
+        <div class="container container__mobile-blok container--position">
           <a class="logo" href="./index.html"><span class="logo__color">Web</span>Studio</a>
           <nav>
-            <ul class="navigation">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <ul class="navigation hiden">
               <li class="navigation__item">
                 <a class="navigation__link" href="./index.html">Agencja</a>
               </li>
@@ -38,7 +47,7 @@
               <li class="navigation__item"><a class="navigation__link" href="#">Kontakt</a></li>
             </ul>
           </nav>
-          <ul class="contact">
+          <ul class="contact hiden">
             <li class="contact__position">
               <a class="contact__link" href="mailto:info@devstudio.com">
                 <svg class="contact__icon" width="16" height="12">
@@ -334,5 +343,57 @@
         </div>
       </section>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <nav>
+        <button
+          type="button"
+          class="close-btn close-btn--menu js-close-menu"
+          data-modal-close="true"
+        >
+          <svg width="18.67" height="18.67">
+            <use href="./images/icons.svg#icon-Vector-close-1"></use>
+          </svg>
+        </button>
+        <ul class="navigation mobile-menu">
+          <li class="navigation__item">
+            <a class="navigation__link active" href="./index.html">Agencja</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link active" href="./portfolio.html"
+              ><span class="active">Portfolio</span></a
+            >
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <ul class="contact">
+        <li class="contact__position">
+          <a class="contact__link contact__link--size-s" href="mailto:info@devstudio.com">
+            <svg class="contact__icon" width="16" height="12">
+              <use class="contact__icon-use" href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="contact__position">
+          <a class="contact__link" href="tel:+48111111111">
+            <svg class="contact__icon" width="10" height="16">
+              <use class="contact__icon-use" href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111
+          </a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="social__item"><a class="social__link" href="#">Instagram</a></li>
+        <hr class="hr" />
+        <li class="social__item"><a class="social__link" href="#">Twitter</a></li>
+        <hr class="hr" />
+        <li class="social__item"><a class="social__link" href="#">Facebook</a></li>
+        <hr class="hr" />
+        <li class="social__item"><a class="social__link" href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
