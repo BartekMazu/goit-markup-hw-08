@@ -1,0 +1,30 @@
+@import '../../utils/vars';
+
+.job-box {
+  list-style-type: none;
+  justify-content: space-between;
+  display: flex;
+  height: 100%;
+
+  &__item {
+    position: relative;
+  }
+
+  &__title {
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    width: 100%;
+    padding: 27px;
+    border-bottom-left-radius: 4px;
+    background-color: $color-background;
+    color: $color-primary-text;
+  }
+}
