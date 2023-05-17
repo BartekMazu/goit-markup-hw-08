@@ -126,6 +126,7 @@
     }
   }
 }
+
 .social {
   display: flex;
   list-style-type: none;
@@ -141,11 +142,13 @@
   }
   &__link {
     text-decoration: none;
+
+    &:visited {
+      color: #2196f3;
+    }
   }
 }
-.social__link:visited {
-  color: #2196f3;
-}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -167,11 +170,29 @@
     fill: #2196f3;
   }
 }
-.hr {
-  width: 22px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateX(100%);
+  transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-open {
+    transform: translateX(0);
+  }
 }
+
+.mobile-menu {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 767px) {
   .hiden {
     display: none;
