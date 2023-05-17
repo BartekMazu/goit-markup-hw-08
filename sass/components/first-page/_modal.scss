@@ -29,11 +29,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: color-svg-button;
+  fill: $color-svg-button;
 
   &:hover {
     background-color: $color-background-close-btn-hover;
     fill: $color-svg-hover;
+  }
+  &--menu {
+    border: none;
+    margin-right: 25px;
+
+    &:hover {
+      fill: #2196f3;
+      background-color: #ffffff;
+    }
   }
 }
 .modal {

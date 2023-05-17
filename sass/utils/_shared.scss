@@ -12,7 +12,16 @@
   &--position {
     display: flex;
     align-items: center;
-    max-height: 80px;
+    
+  }
+  &__mobile-blok {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      min-height: 80px;
+  }
   }
 }
 .section {
@@ -61,7 +70,6 @@ img {
   line-height: 1.2;
   text-decoration: none;
   color: $global-color;
-  margin: 24px 0 25px 0;
 
   &:hover,
   &:focus {

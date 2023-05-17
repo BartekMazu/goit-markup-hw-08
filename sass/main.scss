@@ -1,7 +1,7 @@
 @import './utils/vars';
 @import './utils/shared';
-@import './components/first-page/footer';
-@import './components/first-page/header';
+@import './components/footer/footer';
+@import './components/header/header';
 @import './components/first-page/first-page';
 @import './components/first-page/modal';
 @import './components/first-page/our-client';
@@ -9,4 +9,4 @@
 @import './components/first-page/job-box';
 @import './components/first-page/team-box';
 @import './components/second-page/portfolio';
-
+@import './components/header/menu-container';
