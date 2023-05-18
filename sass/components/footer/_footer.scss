@@ -163,6 +163,9 @@
     background-color: $color-background-footer;
     padding-left: 16px;
     width: 450px;
+    @media (max-width: 480px) {
+      width: 100vw;
+    }
     @media (min-width: 1200px) {
       width: 358px;
     }
