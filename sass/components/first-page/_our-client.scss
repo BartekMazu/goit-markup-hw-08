@@ -2,18 +2,32 @@
 
 .our-client {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 
   &__item {
-    width: 170px;
-    padding-top: 24.71px;
-    padding-bottom: 20.58px;
+    width: 210px;
+    height: 92px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid $color-border;
     border-radius: 4px;
     fill: $color-svg;
+    @media (min-width: 768px) {
+      width: 226px;
+      height: 92px;
+    }
+    @media (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+    }
 
     &:hover,
     &:focus {
@@ -21,9 +35,6 @@
       fill: $color-focus-hover;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &:not(:last-child) {
-      margin-right: 30px;
     }
   }
 }
