@@ -4,6 +4,12 @@
   list-style-type: none;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 
   &__title {
     font-weight: 700;
@@ -12,22 +18,39 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     padding-bottom: 10px;
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
   }
   &__description {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $color-text;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+      width: 450px;
+    }
+    @media (min-width: 768px) and (max-width: 1200px) {
+      width: 354px;
+    }
   }
   &__icon-background {
-    background-color: $color-background-icons;
-    width: 270px;
     padding-top: 25px;
     padding-bottom: 25px;
-    justify-content: center;
     padding-top: 25px;
-    text-align: center;
     margin-bottom: 30px;
+    justify-content: center;
+    text-align: center;
+    background-color: $color-background-icons;
+    width: 450px;
+    @media (min-width: 768px) {
+      width: 354px;
+    }
+    @media (min-width: 1200px) {
+      width: 270px;
+    }
   }
   &__icon {
     border-radius: 4px;
