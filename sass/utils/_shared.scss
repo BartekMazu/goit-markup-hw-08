@@ -66,11 +66,15 @@ img {
 }
 .logo {
   font-family: $second-font;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
   color: $global-color;
+  @media(min-width: 1200px){
+    font-size: 26px;
+  }
+  
 
   &:hover,
   &:focus {
