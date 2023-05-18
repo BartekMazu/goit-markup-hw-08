@@ -75,6 +75,7 @@
   display: flex;
   flex-direction: column-reverse;
   @media (min-width: 768px) {
+    flex-direction: column;
     padding-top: 0;
     margin-left: auto;
 
@@ -88,7 +89,7 @@
     padding-bottom: 32px;
     @media (min-width: 768px) and (max-width: 1199px) {
       padding-bottom: 0;
-      &:not(:first-child) {
+      &:not(:last-child) {
         padding-bottom: 10px;
       }
     }
@@ -106,6 +107,26 @@
       display: inline-flex;
       margin-right: 10px;
       align-items: center;
+    }
+    &--size-phone {
+      @media (max-width: 1200px) {
+        width: 10px;
+        height: 14px;
+      }
+      @media (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+      }
+    }
+    &--size-email {
+      @media (max-width: 1200px) {
+        width: 14px;
+        height: 10px;
+      }
+      @media (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+      }
     }
   }
   &__link {
