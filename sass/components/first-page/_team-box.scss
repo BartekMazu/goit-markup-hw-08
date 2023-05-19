@@ -6,17 +6,40 @@
 .team-card {
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  height: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  @media (min-width: 768px) {
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 100%;
+  }
 
   &__item {
-    width: 270px;
-    padding-bottom: 30px;
     text-align: center;
     background-color: $color-background-neutral;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    width: 450px;
+    height: 622px;
+    @media (min-width: 768px) {
+      width: 354px;
+      height: 536px;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1200px) {
+      width: 270px;
+      height: auto;
+      padding-bottom: 30px;
+    }
   }
 
   &__title {
