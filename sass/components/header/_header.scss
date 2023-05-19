@@ -160,6 +160,9 @@
       }
     }
   }
+  &__color {
+    color: $color-focus-hover;
+  }
 }
 .social {
   display: flex;
@@ -214,7 +217,7 @@
   height: 100vh;
   padding: 40px;
   background-color: $color-background-neutral;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
