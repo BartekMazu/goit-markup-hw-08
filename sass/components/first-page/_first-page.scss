@@ -2,23 +2,50 @@
 
 .first-page {
   background: $image-background;
-  padding-top: 200px;
-  padding-bottom: 210px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 118px;
+  padding-bottom: 198px;
   max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  height: 400px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: url(../../../images/header/img-header-x2.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    background: $image-backgroundx2;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: $image-backgroundx3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 210px;
+    height: 600px;
+  }
 
   &__title {
     color: $color-primary-text;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.6;
     padding-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.4;
+    }
   }
   &__button {
     display: block;

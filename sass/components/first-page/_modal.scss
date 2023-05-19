@@ -32,16 +32,16 @@
   fill: $color-svg-button;
 
   &:hover {
-    background-color: $color-background-close-btn-hover;
-    fill: $color-svg-hover;
+    background-color: $color-background-btn;
+    fill: $color-button;
   }
   &--menu {
     border: none;
     margin-right: 25px;
 
     &:hover {
-      fill: #2196f3;
-      background-color: #ffffff;
+      fill: $color-focus-hover;
+      background-color: $color-background-btn;
     }
   }
 }

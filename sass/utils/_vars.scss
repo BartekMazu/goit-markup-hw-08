@@ -8,6 +8,7 @@ $color-svg: #afb1b8;
 $color-svg-footer: #757575;
 $color-svg-hover: #ffffff;
 $color-svg-button: #000000;
+$color-svg-media: #ececec;
 $color-primary-text: #ffffff;
 $color-text: #757575;
 $color-text-neutral: rgba(255, 255, 255, 0.6);
@@ -17,13 +18,16 @@ $color-button: #2196f3;
 $color-button-svg: #ffffff;
 $image-background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url(./../images/header/img-header.jpg);
+$image-backgroundx2:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(./../images/header/img-header-x2.jpg);
+$image-backgroundx3:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url(./../images/header/img-header-x3.jpg);
 $color-background: rgba(47, 48, 58, 0.8);
 $color-background-icons: #f5f4fa;
 $color-background-team-box: #f5f4fa;
 $color-background-neutral: rgba(255, 255, 255, 1);
 $color-background-footer: #2f303a;
 $color-background-btn: #ffffff;
-$color-background-close-btn-hover: #fd1b1b;
 $color-background-modal: #fff;
 $color-background-svg: rgba(255, 255, 255, 0.1);
 $color-checkbox: #212121;
