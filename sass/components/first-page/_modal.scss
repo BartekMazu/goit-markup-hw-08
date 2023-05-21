@@ -57,9 +57,9 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  @media (min-width:1200px){
+  @media (min-width: 1200px) {
     width: 528px;
-  min-height: 581px;
+    min-height: 581px;
   }
 
   &__window {
@@ -90,10 +90,13 @@
   }
   &__statue-text {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $color-text;
+    @media (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 
   &__button {
@@ -122,7 +125,7 @@
     letter-spacing: 0.01em;
     color: $color-text;
     padding-bottom: 4px;
-    &:hover{
+    &:hover {
       color: $color-focus-hover;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
